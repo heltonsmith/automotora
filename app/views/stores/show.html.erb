@@ -1,5 +1,6 @@
 <h1>Stores#show</h1>
 <p>Find me in app/views/stores/show.html.erb</p>
-<img src="<%= asset_path 'auto.jpg' %>" class="miimagenlinda">
-<br>
-<%= image_tag 'auto.jpg', class: "miimagenlinda" %>
+
+<% @todos.each do |v| %>
+    <p><%= v.brand %></p>
+<% end %>

@@ -6,6 +6,6 @@ class StoresController < ApplicationController
   end
 
   def show
-    render layout: "layout2"
+    @todos = Vehicle.all
   end
 end
